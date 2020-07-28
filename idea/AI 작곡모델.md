@@ -13,3 +13,7 @@ AI 작곡모델
 학습데이터(음악데이터) 확보.   
 학습데이터(음악데이터) 학습하는 개별환경 구성 시간 확보.   
 
+
+list of datasets   
+http://www.ismir.net/resources/datasets/
+https://zenodo.org/record/3371780#.Xx_duC3U2J8
