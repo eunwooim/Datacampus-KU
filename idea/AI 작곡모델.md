@@ -15,5 +15,5 @@ AI 작곡모델
 
 
 list of datasets   
-http://www.ismir.net/resources/datasets/
+http://www.ismir.net/resources/datasets/  
 https://zenodo.org/record/3371780#.Xx_duC3U2J8
