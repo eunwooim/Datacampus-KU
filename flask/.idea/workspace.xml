@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d23a6d0-c83d-45e4-a5bf-854779501c34" name="Default Changelist" comment="" />
+    <list default="true" id="c3644ebb-6cca-4529-8df9-f191bf358621" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +11,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -18,19 +20,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JupyterTrust" id="c36c1b54-a3fb-455a-8f8e-bc7a7da9a272" />
-  <component name="ProjectId" id="1gXGGhrh3SfFgrqWEMkJPk3oN2r" />
+  <component name="ProjectId" id="1gXFk24EJHpjsFdwVxudZONZygH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flask" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\A\Documents\GitHub\project\flask" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="flask" type="Python.FlaskServer">
-      <module name="flask" />
+    <configuration name="project" type="Python.FlaskServer">
+      <module name="project" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -48,16 +58,51 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d23a6d0-c83d-45e4-a5bf-854779501c34" name="Default Changelist" comment="" />
-      <created>1598253429325</created>
+      <changelist id="c3644ebb-6cca-4529-8df9-f191bf358621" name="Default Changelist" comment="" />
+      <created>1598253170184</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598253429325</updated>
-      <workItem from="1598253446601" duration="597000" />
+      <updated>1598253170184</updated>
+      <workItem from="1598253189884" duration="237000" />
+      <workItem from="1598704392462" duration="2696000" />
+      <workItem from="1598775333417" duration="4575000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598779040909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598779040909" />
+    <state x="516" y="272" key="FileChooserDialogImpl" timestamp="1598253421632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="516" y="272" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598253421632" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1598783272156">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598783272156" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1598783272155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598783272155" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1598783272155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598783272155" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1598783272155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598783272155" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1598704429493">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598704429493" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flask$project.coverage" NAME="project Coverage Results" MODIFIED="1598778321431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
