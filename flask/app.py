@@ -27,7 +27,6 @@ def predict():
     if request.method == 'POST':
 
         total_input = [x for x in request.form.values()]
-        print(total_input)
 
         X1_input = input_preprocess.make_X1input(total_input[1:4])
         X2_input = input_preprocess.make_X2input(total_input[4:7])
@@ -37,14 +36,14 @@ def predict():
         probation_model = load_model('02_probation.h5')
         y_sentence = sentence_model.predict([X1_input, X2_input, X3_input])
         y_pobation = probation_model.predict([X1_input, X2_input, X3_input])
-        sim_url = similar_pgm.find_similar_pgm(total_input[7])
+        sim_url, sim_title = similar_pgm.find_similar_pgm(X3_input)
 
         if total_input[0] == '네':
             appeal_model = load_model('03_appeal.h5')
             y_appeal = appeal_model.predict([X1_input, X2_input, X3_input])
-            return render_template('result.html', y_sentence=y_sentence, y_pobation=y_pobation, y_appeal=y_appeal, sim_url=sim_url)
+            return render_template('result_2.html', y_sentence=y_sentence, y_pobation=y_pobation, y_appeal=y_appeal, sim_url=sim_url, sim_title=sim_title)
         else:
-            return render_template('result.html', y_sentence=y_sentence, y_pobation=y_pobation, sim_url=sim_url)
+            return render_template('result_1.html', y_sentence=y_sentence, y_pobation=y_pobation, sim_url=sim_url, sim_title=sim_title)
 
 if __name__ == "__main__":
     app.run(debug=True)
