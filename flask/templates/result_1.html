@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Result</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{{ url_for('static', filename='css/mdb.min.css') }}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{{ url_for('static', filename='css/style.min.css') }}" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href="{{ url_for('static', filename='css/result.css') }}" rel="stylesheet">
+  <link rel = "shortcut icon" href = "static/img/icon.ico">
+  <link rel="icon" href="static/img/icon.ico">
+  <!-- resultcss -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="/" >
+        <strong>Free-Honor</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutFH">About Free-Honor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutUS" >About Us</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="mt-4" style=" margin: auto;">
+
+        <h3 class="h3 text-center mb-5">결과</h3>
+                <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-8 mb-4">
+
+
+            <!--Card-->
+            <div class="card mb-4 wow fadeIn">
+
+              <!--Card content-->
+              <div class="card-body text-center">
+                  <p class="h5 my-4">징역 예측 결과</p>
+                  <div class="content" style="text-align: center;">
+                    <p>
+
+                          <h5>{{ y_sentence }} 개월</h5>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <!--/.Card-->
+
+            <!--Card-->
+            <div class="card mb-4 wow fadeIn">
+
+              <!--Card content-->
+              <div class="card-body text-center">
+                  <p class="h5 my-4">집행유예 예측 결과</p>
+                  <div class="content" style="text-align: center;">
+                    <p>
+
+                          <h5>집행유예일 가능성 : {{ y_probation }} 퍼센트</h5>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <!--/.Card-->
+
+            <!--Card-->
+            <div class="card mb-4 wow fadeIn">
+
+              <!--Card content-->
+              <div class=lass="card-body text-center">
+              <p class="h5 my-4" style="text-align: center;">유사 판결문 링크</p>
+              <div class="content" style="text-align: center;">
+                  <p>
+                    <h5>
+
+                            <a href="{{ sim_url.0 }}" target="_blank">{{ sim_title.0 }}</a>
+                            <br>
+                            <a href="{{ sim_url.1 }}" target="_blank">{{ sim_title.1 }}</a>
+                            <br>
+                            <a href="{{ sim_url.2 }}" target="_blank">{{ sim_title.2 }}</a>
+                            <br>
+                            <a href="{{ sim_url.3 }}" target="_blank">{{ sim_title.3 }}</a>
+                            <br>
+                            <a href="{{ sim_url.4 }}" target="_blank">{{ sim_title.4 }}</a>
+                            <br>
+                            <a href="{{ sim_url.5 }}" target="_blank">{{ sim_title.5 }}</a>
+                            <br>
+                            <a href="{{ sim_url.6 }}" target="_blank">{{ sim_title.6 }}</a>
+                            <br>
+                            <a href="{{ sim_url.7 }}" target="_blank">{{ sim_title.7 }}</a>
+                            <br>
+                            <a href="{{ sim_url.8 }}" target="_blank">{{ sim_title.8 }}</a>
+                            <br>
+                            <a href="{{ sim_url.9 }}" target="_blank">{{ sim_title.9 }}</a>
+
+                    </h5>
+                  </p>
+              </div>
+
+
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+          </div>
+          <!--Grid column-->
+                 <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+            <!--Card: Jumbotron-->
+            <div class="card blue-gradient mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-white text-center">
+
+                <h4 class="mb-4">
+                  <strong>새로 예측하기</strong>
+                </h4>
+                <p>
+                  <strong>혹시 다른 조건으로 예측해보고 싶으신가요?</strong>
+                </p>
+
+                <a target="_blank" href="/" class="btn btn-outline-white btn-md">Home
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!--Card: Jumbotron-->
+
+
+          </div>
+          <!--Grid column-->
+
+
+        </div>
+        <!--Grid row-->
+       </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
+</html>
