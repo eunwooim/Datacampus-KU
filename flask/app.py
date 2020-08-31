@@ -35,15 +35,15 @@ def predict():
         sentence_model = load_model("01_sentence.h5")
         probation_model = load_model('02_probation.h5')
         y_sentence = sentence_model.predict([X1_input, X2_input, X3_input])
-        y_pobation = probation_model.predict([X1_input, X2_input, X3_input])
-        sim_url, sim_title = similar_pgm.find_similar_pgm(X3_input)
+        y_probation = probation_model.predict([X1_input, X2_input, X3_input])
+        sim_url, sim_title = similar_pgm.find_similar_pgm(total_input[7])
 
         if total_input[0] == '네':
             appeal_model = load_model('03_appeal.h5')
             y_appeal = appeal_model.predict([X1_input, X2_input, X3_input])
-            return render_template('result_2.html', y_sentence=y_sentence, y_pobation=y_pobation, y_appeal=y_appeal, sim_url=sim_url, sim_title=sim_title)
+            return render_template('result_2.html', y_sentence=round(y_sentence, 2), y_probation=round(y_probation[0][1], 2), y_appeal=round(y_appeal[0][1], 2), sim_url=sim_url, sim_title=sim_title)
         else:
-            return render_template('result_1.html', y_sentence=y_sentence, y_pobation=y_pobation, sim_url=sim_url, sim_title=sim_title)
+            return render_template('result_1.html', y_sentence=round(y_sentence, 2), y_probation=round(y_probation[0][1], 2), sim_url=sim_url, sim_title=sim_title)
 
 if __name__ == "__main__":
     app.run(debug=True)
