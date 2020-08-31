@@ -46,3 +46,10 @@ Code | Explanation | Used Library
 [02_0_probation](https://github.com/datacampus-team2/project/blob/master/data_modeling/02_0_probation.ipynb) | 집행유예 예측 모델 생성 |
 [03_0_appeal](https://github.com/datacampus-team2/project/blob/master/data_modeling/03_0_appeal.ipynb) | 항소 예측 모델 생성 |
 [04_0_fine](https://github.com/datacampus-team2/project/blob/master/data_modeling/04_0_fine.ipynb) | 벌금 예측 모델 생성 |
+
+<br>
+<br>
+
+## 모델 그래프
+
+![모델 그래프](https://github.com/datacampus-team2/project/blob/master/data_modeling/01_sentence.png)
